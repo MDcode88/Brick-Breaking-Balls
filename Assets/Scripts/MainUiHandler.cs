@@ -1,6 +1,8 @@
 using UnityEngine;
 using TMPro;
 using System.Xml;
+using UnityEditor;
+using UnityEngine.SceneManagement;
 
 public class MainUiHandler : MonoBehaviour
 {
@@ -23,6 +25,11 @@ public class MainUiHandler : MonoBehaviour
             
             nameText.text = "HumanName";
         }
+    }
+
+    public void ToStart()
+    {
+       SceneManager.LoadScene(0);
     }
 }
 
